@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/txt_explicacao21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Clique para ouvir o som das Letras!"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#4A90E2"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Voltar para o Menu Principal"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:backgroundTint="#A8E6A3"
+        android:layout_marginBottom="12dp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnA"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="Aa"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:backgroundTint="#FFB1C7"/>
+
+            <Button
+                android:id="@+id/btnB"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="Bb"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:backgroundTint="#FFB1C7"/>
+
+            <Button
+                android:id="@+id/btnC"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="Cc"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:backgroundTint="#FFB1C7"/>
+
+            <Button
+                android:id="@+id/btnD"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="Dd"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:backgroundTint="#FFB1C7"/>
+
+        </TableRow>
+
+        <TableRow>
+            <Button android:id="@+id/btnE" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:text="Ee" android:textColor="#000000" android:textStyle="bold" android:backgroundTint="#CAB8F7"/>
+            <Button android:id="@+id/btnF" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:text="Ff" android:textColor="#000000" android:textStyle="bold" android:backgroundTint="#CAB8F7"/>
+            <Button android:id="@+id/btnG" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:text="Gg" android:textColor="#000000" android:textStyle="bold" android:backgroundTint="#CAB8F7"/>
+            <Button android:id="@+id/btnH" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:text="Hh" android:textColor="#000000" android:textStyle="bold" android:backgroundTint="#CAB8F7"/>
+        </TableRow>
+
+        <TableRow>
+            <Button android:id="@+id/btnI" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:text="Ii" android:textColor="#000000" android:textStyle="bold" android:backgroundTint="#AED6F0"/>
+            <Button android:id="@+id/btnJ" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:text="Jj" android:textColor="#000000" android:textStyle="bold" android:backgroundTint="#AED6F0"/>
+            <Button android:id="@+id/btnK" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:text="Kk" android:textColor="#000000" android:textStyle="bold" android:backgroundTint="#AED6F0"/>
+            <Button android:id="@+id/btnL" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:text="Ll" android:textColor="#000000" android:textStyle="bold" android:backgroundTint="#AED6F0"/>
+        </TableRow>
+
+        <TableRow>
+            <Button android:id="@+id/btnM" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:text="Mm" android:textColor="#000000" android:textStyle="bold" android:backgroundTint="#B5EAD6"/>
+            <Button android:id="@+id/btnN" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:text="Nn" android:textColor="#000000" android:textStyle="bold" android:backgroundTint="#B5EAD6"/>
+            <Button android:id="@+id/btnO" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:text="Oo" android:textColor="#000000" android:textStyle="bold" android:backgroundTint="#B5EAD6"/>
+            <Button android:id="@+id/btnP" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:text="Pp" android:textColor="#000000" android:textStyle="bold" android:backgroundTint="#B5EAD6"/>
+        </TableRow>
+
+        <TableRow>
+            <Button android:id="@+id/btnQ" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:text="Qq" android:textColor="#000000" android:textStyle="bold" android:backgroundTint="#FEF4AF"/>
+            <Button android:id="@+id/btnR" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:text="Rr" android:textColor="#000000" android:textStyle="bold" android:backgroundTint="#FEF4AF"/>
+            <Button android:id="@+id/btnS" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:text="Ss" android:textColor="#000000" android:textStyle="bold" android:backgroundTint="#FEF4AF"/>
+            <Button android:id="@+id/btnT" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:text="Tt" android:textColor="#000000" android:textStyle="bold" android:backgroundTint="#FEF4AF"/>
+        </TableRow>
+
+        <TableRow>
+            <Button android:id="@+id/btnU" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:text="Uu" android:textColor="#000000" android:textStyle="bold" android:backgroundTint="#FFB1C7"/>
+            <Button android:id="@+id/btnV" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:text="Vv" android:textColor="#000000" android:textStyle="bold" android:backgroundTint="#FFB1C7"/>
+            <Button android:id="@+id/btnW" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:text="Ww" android:textColor="#000000" android:textStyle="bold" android:backgroundTint="#FFB1C7"/>
+            <Button android:id="@+id/btnX" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:text="Xx" android:textColor="#000000" android:textStyle="bold" android:backgroundTint="#FFB1C7"/>
+        </TableRow>
+
+        <TableRow>
+            <Button android:id="@+id/btnY" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:text="Yy" android:textColor="#000000" android:textStyle="bold" android:backgroundTint="#CAB8F7"/>
+            <Button android:id="@+id/btnZ" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" android:text="Zz" android:textColor="#000000" android:textStyle="bold" android:backgroundTint="#CAB8F7"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnproxEtapa2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Próxima Etapa"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:backgroundTint="#A8E6A3"
+        android:layout_marginTop="12dp"/>
+
+</LinearLayout>

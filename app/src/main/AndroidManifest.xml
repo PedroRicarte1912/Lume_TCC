@@ -1,0 +1,67 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application android:allowBackup="true" android:dataExtractionRules="@xml/data_extraction_rules" android:fullBackupContent="@xml/backup_rules" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/Theme.Lume">
+        <activity android:name=".activity.Register" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".activity.ActivityTesteSensorial"/>
+        <activity android:name=".activity.AvatarActivity"/>
+        <activity android:name=".activity.ActivityMapearTea"/>
+        <activity android:name=".activity.ActivityLogin"/>
+        <activity android:name=".activity.ActivityLicoes1"/>
+        <activity android:name=".activity.ActivityAboutLicoes"/>
+        <activity android:name=".activity.ActivityU1L1EX1"/>
+        <activity android:name=".activity.ActivityU1L1EX2"/>
+        <activity android:name=".activity.ActivityU1L1EX4"/>
+        <activity android:name=".activity.ActivityU1L1EX4_2"/>
+        <activity android:name=".activity.ActivityU1L1EX4_3"/>
+        <activity android:name=".activity.ActivityU1L1EX4_4"/>
+        <activity android:name=".activity.ActivityU2EX1"/>
+        <activity android:name=".activity.ActivityU2EX2"/>
+        <activity android:name=".activity.ActivityLicoes3"/>
+        <activity android:name=".activity.ActivityU3L3EX1"/>
+        <activity android:name=".activity.ActivityU3L3EX1_2"/>
+        <activity android:name=".activity.ActivityU3L3EX2"/>
+        <activity android:name=".activity.ActivityU3L3EX2_2"/>
+        <activity android:name=".activity.ActivityU3L3EX3"/>
+        <activity android:name=".activity.ActivityU3L3EX4"/>
+        <activity android:name=".activity.ActivityU3L3EX4_2"/>
+        <activity android:name=".activity.ActivityU3L3EX5"/>
+        <activity android:name=".activity.ActivityLicoes4"/>
+        <activity android:name=".activity.ActivityU4L4EX1"/>
+        <activity android:name=".activity.ActivityU4L4EX2"/>
+        <activity android:name=".activity.ActivityU4L4EX3"/>
+        <activity android:name=".activity.ActivityStopLicoesAbout"/>
+        <activity android:name=".activity.ActivityParabens"/>
+        <activity android:name=".activity.ActivityLicoes5"/>
+        <activity android:name=".activity.ActivityU5L5EX1"/>
+        <activity android:name=".activity.ActivityU5L5EX2"/>
+        <activity android:name=".activity.ActivityU5L5EX3"/>
+        <activity android:name=".activity.ActivityU5L5EX3_2"/>
+        <activity android:name=".activity.ActivityU5L5EX4"/>
+        <activity android:name=".activity.ActivityU5L5EX4_2"/>
+        <activity android:name=".activity.ActivityU5L5EX5"/>
+        <activity android:name=".activity.ActivityU5L5EX5_2"/>
+        <activity android:name=".activity.ActivityU5L5EX6"/>
+        <activity android:name=".activity.ActivityU5L5EX6_2"/>
+        <activity android:name=".activity.ActivityU5L5EX6_3"/>
+        <activity android:name=".activity.ActivityU5L5EX6_4"/>
+        <activity android:name=".activity.ActivityU5L5EX7"/>
+        <activity android:name=".activity.ActivityU5L5EX8"/>
+        <activity android:name=".activity.ActivityU5L5EX9"/>
+        <activity android:name=".activity.ActivityU5L5EX10"/>
+        <activity android:name=".activity.ActivityU5L5EX10_2"/>
+        <activity android:name=".activity.ActivityU5L5EX10_3"/>
+        <activity android:name=".activity.ActivityNovaSenha"/>
+        <activity android:name=".activity.ActivityTesteSonoro"/>
+        <activity android:name=".activity.ActivityRecuperarSenha"/>
+        <activity android:name=".activity.ActivityInserirCodigo"/>
+        <activity android:name=".activity.ActivityMenuUnidades"/>
+    </application>
+</manifest>

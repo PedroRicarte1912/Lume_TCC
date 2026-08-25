@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_degrade">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:background="#FFFFFFFF"
+            android:padding="20dp"
+            android:elevation="8dp">
+
+            <TextView
+                android:id="@+id/txtExplicacaoU5L5EX4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="90dp"
+                android:gravity="center"
+                android:text="Escute cada frase e escreva exatamente o que ouviu."
+                android:textColor="@color/lume_texto"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <!-- FRASE 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="80dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnFrase1"
+                    android:layout_width="56dp"
+                    android:layout_height="48dp"
+                    android:backgroundTint="@color/lume_rosa"
+                    android:insetLeft="0dp"
+                    android:insetTop="0dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    app:icon="@drawable/play"
+                    app:iconSize="24dp"
+                    app:iconTint="@color/lume_texto"
+                    app:cornerRadius="14dp"/>
+
+                <EditText
+                    android:id="@+id/edtFrase1"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:background="#FFDBE8FF"
+                    android:hint="Digite a frase"
+                    android:inputType="textMultiLine"
+                    android:minLines="1"
+                    android:padding="12dp"
+                    android:textColor="@color/lume_texto"
+                    android:textColorHint="#99B0D0"/>
+
+            </LinearLayout>
+
+            <!-- FRASE 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="80dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnFrase2"
+                    android:layout_width="56dp"
+                    android:layout_height="48dp"
+                    android:backgroundTint="@color/lume_lilas"
+                    android:insetLeft="0dp"
+                    android:insetTop="0dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    app:icon="@drawable/play"
+                    app:iconSize="24dp"
+                    app:iconTint="@color/lume_texto"
+                    app:cornerRadius="14dp"/>
+
+                <EditText
+                    android:id="@+id/edtFrase2"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:background="#FFDBE8FF"
+                    android:hint="Digite a frase"
+                    android:inputType="textMultiLine"
+                    android:minLines="1"
+                    android:padding="12dp"
+                    android:textColor="@color/lume_texto"
+                    android:textColorHint="#99B0D0"/>
+
+            </LinearLayout>
+
+            <!-- FRASE 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="90dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnFrase3"
+                    android:layout_width="56dp"
+                    android:layout_height="48dp"
+                    android:backgroundTint="@color/lume_azul"
+                    android:insetLeft="0dp"
+                    android:insetTop="0dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    app:icon="@drawable/play"
+                    app:iconSize="24dp"
+                    app:iconTint="@color/lume_texto"
+                    app:cornerRadius="14dp"/>
+
+                <EditText
+                    android:id="@+id/edtFrase3"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:background="#FFDBE8FF"
+                    android:hint="Digite a frase"
+                    android:inputType="textMultiLine"
+                    android:minLines="1"
+                    android:padding="12dp"
+                    android:textColor="@color/lume_texto"
+                    android:textColorHint="#99B0D0"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnProximoU5L5EX4"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:backgroundTint="@color/lume_verde"
+                android:text="Próximo Exercício"
+                android:textColor="@color/lume_texto"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_degrade">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFFFF"
+            android:elevation="8dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/txt_explicacao3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="Escreva a letra de acordo com o aúdio"
+                android:textColor="@color/lume_texto"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- U -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bnt_audioU2"
+                    android:layout_width="56dp"
+                    android:layout_height="48dp"
+                    android:backgroundTint="@color/lume_rosa"
+                    android:insetLeft="0dp"
+                    android:insetTop="0dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    app:cornerRadius="14dp"
+                    app:icon="@drawable/play"
+                    app:iconSize="24dp"
+                    app:iconTint="@color/lume_texto" />
+
+                <EditText
+                    android:id="@+id/edt_letraU"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="#FFDBE8FF"
+                    android:hint="letra:"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColor="@color/lume_texto"
+                    android:textColorHint="#99B0D0" />
+
+            </LinearLayout>
+
+            <!-- E -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_audioE2"
+                    android:layout_width="56dp"
+                    android:layout_height="48dp"
+                    android:backgroundTint="@color/lume_lilas"
+                    android:insetLeft="0dp"
+                    android:insetTop="0dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    app:cornerRadius="14dp"
+                    app:icon="@drawable/play"
+                    app:iconSize="24dp"
+                    app:iconTint="@color/lume_texto" />
+
+                <EditText
+                    android:id="@+id/edt_letraE"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="#FFDBE8FF"
+                    android:hint="letra:"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColor="@color/lume_texto"
+                    android:textColorHint="#99B0D0" />
+
+            </LinearLayout>
+
+            <!-- A -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_audioA2"
+                    android:layout_width="56dp"
+                    android:layout_height="48dp"
+                    android:backgroundTint="@color/lume_azul"
+                    android:insetLeft="0dp"
+                    android:insetTop="0dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    app:cornerRadius="14dp"
+                    app:icon="@drawable/play"
+                    app:iconSize="24dp"
+                    app:iconTint="@color/lume_texto" />
+
+                <EditText
+                    android:id="@+id/edt_letraA"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="#FFDBE8FF"
+                    android:hint="letra:"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColor="@color/lume_texto"
+                    android:textColorHint="#99B0D0" />
+
+            </LinearLayout>
+
+            <!-- O -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_audioO2"
+                    android:layout_width="56dp"
+                    android:layout_height="48dp"
+                    android:backgroundTint="@color/lume_verde"
+                    android:insetLeft="0dp"
+                    android:insetTop="0dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    app:cornerRadius="14dp"
+                    app:icon="@drawable/play"
+                    app:iconSize="24dp"
+                    app:iconTint="@color/lume_texto" />
+
+                <EditText
+                    android:id="@+id/edt_letraO"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="#FFDBE8FF"
+                    android:hint="letra:"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColor="@color/lume_texto"
+                    android:textColorHint="#99B0D0" />
+
+            </LinearLayout>
+
+            <!-- I -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_audioI2"
+                    android:layout_width="56dp"
+                    android:layout_height="48dp"
+                    android:backgroundTint="@color/lume_amarelo"
+                    android:insetLeft="0dp"
+                    android:insetTop="0dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    app:cornerRadius="14dp"
+                    app:icon="@drawable/play"
+                    app:iconSize="24dp"
+                    app:iconTint="@color/lume_texto" />
+
+                <EditText
+                    android:id="@+id/edt_letraI"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="#FFDBE8FF"
+                    android:hint="letra:"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColor="@color/lume_texto"
+                    android:textColorHint="#99B0D0" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_proxlicao2"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:backgroundTint="@color/lume_verde"
+                android:text="Próximo Exercício"
+                android:textColor="@color/lume_texto"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

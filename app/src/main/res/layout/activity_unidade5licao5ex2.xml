@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_degrade">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:background="#FFFFFFFF"
+            android:padding="20dp"
+            android:elevation="8dp">
+
+            <TextView
+                android:id="@+id/txtExplicacaoU5L5EX2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Escute os áudios e, em seguida, digite o que ouviu."
+                android:textColor="@color/lume_texto"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="32dp"/>
+
+            <!-- SAPO -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="24dp">
+
+                <Button
+                    android:id="@+id/btnSapo"
+                    android:layout_width="56dp"
+                    android:layout_height="48dp"
+                    android:backgroundTint="@color/lume_rosa"
+                    android:insetLeft="0dp"
+                    android:insetTop="0dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    app:icon="@drawable/play"
+                    app:iconSize="24dp"
+                    app:iconTint="@color/lume_texto"
+                    app:cornerRadius="14dp"/>
+
+                <EditText
+                    android:id="@+id/edtSapo"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:background="#FFDBE8FF"
+                    android:hint="Digite a palavra"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColor="@color/lume_texto"
+                    android:textColorHint="#99B0D0"/>
+
+            </LinearLayout>
+
+            <!-- ELEFANTE -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="24dp">
+
+                <Button
+                    android:id="@+id/btnElefante"
+                    android:layout_width="56dp"
+                    android:layout_height="48dp"
+                    android:backgroundTint="@color/lume_lilas"
+                    android:insetLeft="0dp"
+                    android:insetTop="0dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    app:icon="@drawable/play"
+                    app:iconSize="24dp"
+                    app:iconTint="@color/lume_texto"
+                    app:cornerRadius="14dp"/>
+
+                <EditText
+                    android:id="@+id/edtElefante"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:background="#FFDBE8FF"
+                    android:hint="Digite a palavra"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColor="@color/lume_texto"
+                    android:textColorHint="#99B0D0"/>
+
+            </LinearLayout>
+
+            <!-- LIVRO -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="24dp">
+
+                <Button
+                    android:id="@+id/btnLivro"
+                    android:layout_width="56dp"
+                    android:layout_height="48dp"
+                    android:backgroundTint="@color/lume_azul"
+                    android:insetLeft="0dp"
+                    android:insetTop="0dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    app:icon="@drawable/play"
+                    app:iconSize="24dp"
+                    app:iconTint="@color/lume_texto"
+                    app:cornerRadius="14dp"/>
+
+                <EditText
+                    android:id="@+id/edtLivro"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:background="#FFDBE8FF"
+                    android:hint="Digite a palavra"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColor="@color/lume_texto"
+                    android:textColorHint="#99B0D0"/>
+
+            </LinearLayout>
+
+            <!-- BORBOLETA -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="24dp">
+
+                <Button
+                    android:id="@+id/btnBorboleta"
+                    android:layout_width="56dp"
+                    android:layout_height="48dp"
+                    android:backgroundTint="@color/lume_verde"
+                    android:insetLeft="0dp"
+                    android:insetTop="0dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    app:icon="@drawable/play"
+                    app:iconSize="24dp"
+                    app:iconTint="@color/lume_texto"
+                    app:cornerRadius="14dp"/>
+
+                <EditText
+                    android:id="@+id/edtBorboleta"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:background="#FFDBE8FF"
+                    android:hint="Digite a palavra"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColor="@color/lume_texto"
+                    android:textColorHint="#99B0D0"/>
+
+            </LinearLayout>
+
+            <!-- CACHORRO -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="24dp">
+
+                <Button
+                    android:id="@+id/btnCachorro"
+                    android:layout_width="56dp"
+                    android:layout_height="48dp"
+                    android:backgroundTint="@color/lume_amarelo"
+                    android:insetLeft="0dp"
+                    android:insetTop="0dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    app:icon="@drawable/play"
+                    app:iconSize="24dp"
+                    app:iconTint="@color/lume_texto"
+                    app:cornerRadius="14dp"/>
+
+                <EditText
+                    android:id="@+id/edtCachorro"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:background="#FFDBE8FF"
+                    android:hint="Digite a palavra"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColor="@color/lume_texto"
+                    android:textColorHint="#99B0D0"/>
+
+            </LinearLayout>
+
+            <!-- CHUVA -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="32dp">
+
+                <Button
+                    android:id="@+id/btnChuva"
+                    android:layout_width="56dp"
+                    android:layout_height="48dp"
+                    android:backgroundTint="@color/lume_rosa"
+                    android:insetLeft="0dp"
+                    android:insetTop="0dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    app:icon="@drawable/play"
+                    app:iconSize="24dp"
+                    app:iconTint="@color/lume_texto"
+                    app:cornerRadius="14dp"/>
+
+                <EditText
+                    android:id="@+id/edtChuva"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:background="#FFDBE8FF"
+                    android:hint="Digite a palavra"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColor="@color/lume_texto"
+                    android:textColorHint="#99B0D0"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnProximoU5L5EX2"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:backgroundTint="@color/lume_verde"
+                android:text="Próximo Exercício"
+                android:textColor="@color/lume_texto"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

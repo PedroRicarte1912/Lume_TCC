@@ -1,0 +1,28 @@
+# Compilação e executáveis
+*.ap_
+*.apk
+*.aab
+*.aar
+/build
+app/build
+/captures
+.externalNativeBuild
+.cxx
+
+# Cache e configurações de IDEs
+*.iml
+.gradle/
+.idea/
+.kotlin/
+
+# Configurações locais da máquina
+/local.properties
+
+# Firebase e Credenciais privadas (Adicionado por segurança)
+app/google-services.json
+*.keystore
+*.jks
+
+# Logs do sistema operacional
+.DS_Store
+Thumbs.db

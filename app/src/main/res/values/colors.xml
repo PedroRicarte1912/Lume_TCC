@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Paleta Lume -->
+    <color name="lume_rosa">#FFB3C6</color>
+    <color name="lume_verde">#B5EAD7</color>
+    <color name="lume_lilas">#C9B8F5</color>
+    <color name="lume_azul">#AED6F1</color>
+    <color name="lume_amarelo">#FFF3B0</color>
+    <color name="lume_texto">#5A4FCF</color>
+    <color name="lume_branco_card">#F5F0FF</color>
+</resources>

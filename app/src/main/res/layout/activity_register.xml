@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lume_lilas">
+
+    <LinearLayout
+        android:id="@+id/card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="28dp"
+        android:background="@color/lume_branco_card"
+        android:elevation="8dp"
+        android:orientation="vertical"
+        android:padding="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/logo_desc"
+            android:scaleType="centerInside"
+            android:src="@drawable/logo_lume" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="@string/bem_vindo"
+            android:textColor="@color/lume_texto"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- NOME -->
+        <EditText
+            android:id="@+id/edt_nome_register"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginBottom="12dp"
+            android:background="#FFDBE8FF"
+            android:autofillHints="name"
+            android:hint="@string/nome_usuario"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textColor="@color/lume_texto"
+            android:textColorHint="#99B0D0" />
+
+        <!-- EMAIL -->
+        <EditText
+            android:id="@+id/edt_email_register"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginBottom="12dp"
+            android:background="#FFDBE8FF"
+            android:autofillHints="emailAddress"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="@color/lume_texto"
+            android:textColorHint="#99B0D0" />
+
+        <!-- SENHA -->
+        <EditText
+            android:id="@+id/edt_senha_register"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginBottom="12dp"
+            android:background="#FFDBE8FF"
+            android:autofillHints="password"
+            android:hint="@string/senha"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="@color/lume_texto"
+            android:textColorHint="#99B0D0" />
+
+        <!-- CONFIRMAR SENHA -->
+        <EditText
+            android:id="@+id/edt_confirmar_senha_register"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginBottom="20dp"
+            android:background="#FFDBE8FF"
+            android:autofillHints="password"
+            android:hint="@string/confirmar_senha"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="@color/lume_texto"
+            android:textColorHint="#99B0D0" />
+
+        <!-- BOTÃO CADASTRAR -->
+        <Button
+            android:id="@+id/btn_registro"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/lume_rosa"
+            android:text="@string/criar_conta"
+            android:textColor="@color/lume_texto"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp" />
+
+        <!-- BOTÃO IR PARA LOGIN -->
+        <Button
+            android:id="@+id/btn_ir_login"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:backgroundTint="@color/lume_verde"
+            android:text="Já tem uma conta? Faça login"
+            android:textColor="@color/lume_texto"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

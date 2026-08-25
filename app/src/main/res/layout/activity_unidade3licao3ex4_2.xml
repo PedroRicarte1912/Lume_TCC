@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_degrade">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFFFF"
+            android:padding="24dp"
+            android:elevation="8dp">
+
+            <!-- TÍTULO -->
+            <TextView
+                android:id="@+id/txtTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ligue a imagem à palavra"
+                android:textColor="@color/lume_texto"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <!-- INSTRUÇÃO -->
+            <TextView
+                android:id="@+id/txtInstrucao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Toque em uma imagem e depois na palavra correspondente."
+                android:textColor="#666666"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- LUA -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/imgLua"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/lua"
+                    android:padding="10dp"
+                    android:tag="lua"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:scaleType="fitCenter"/>
+
+                <TextView
+                    android:id="@+id/tvEscola"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="16dp"
+                    android:text="Escola"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/lume_texto"
+                    android:gravity="center"
+                    android:tag="escola"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@color/lume_rosa"/>
+
+            </LinearLayout>
+
+            <!-- FOGO -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/imgFogo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/fogo"
+                    android:padding="10dp"
+                    android:tag="fogo"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:scaleType="fitCenter"/>
+
+                <TextView
+                    android:id="@+id/tvLua"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="16dp"
+                    android:text="Lua"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/lume_texto"
+                    android:gravity="center"
+                    android:tag="lua"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@color/lume_lilas"/>
+
+            </LinearLayout>
+
+            <!-- ESCOLA -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/imgEscola"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/escola"
+                    android:padding="10dp"
+                    android:tag="escola"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:scaleType="fitCenter"/>
+
+                <TextView
+                    android:id="@+id/tvPorta"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="16dp"
+                    android:text="Porta"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/lume_texto"
+                    android:gravity="center"
+                    android:tag="porta"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@color/lume_azul"/>
+
+            </LinearLayout>
+
+            <!-- PORTA -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="24dp">
+
+                <ImageView
+                    android:id="@+id/imgPorta"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/porta"
+                    android:padding="10dp"
+                    android:tag="porta"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:scaleType="fitCenter"/>
+
+                <TextView
+                    android:id="@+id/tvFogo"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="16dp"
+                    android:text="Fogo"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/lume_texto"
+                    android:gravity="center"
+                    android:tag="fogo"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@color/lume_verde"/>
+
+            </LinearLayout>
+
+            <!-- BOTÃO FINAL -->
+            <Button
+                android:id="@+id/btnEntregar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Entregar Resposta"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/lume_texto"
+                android:backgroundTint="@color/lume_verde"
+                android:layout_marginTop="8dp"
+                app:cornerRadius="20dp"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

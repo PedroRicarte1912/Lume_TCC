@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_degrade">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFFFF"
+            android:padding="24dp"
+            android:elevation="8dp">
+
+            <TextView
+                android:id="@+id/txt_explicacao11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Etapa 3 do exercício 1:"
+                android:textAlignment="center"
+                android:textColor="@color/lume_texto"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/txt_explicacao9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Escute os áudios e escreva os tritongos:"
+                android:textAlignment="center"
+                android:textColor="@color/lume_texto"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/txt_explicacao10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text='Tritongos são uniões de semivogal + vogal + outra semivogal formando um "sanduíche" de 3 letras'
+                android:textAlignment="center"
+                android:textColor="@color/lume_texto"
+                android:textSize="16sp"
+                android:layout_marginBottom="24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+                <Button
+                    android:id="@+id/btn_silabaUAI"
+                    android:layout_width="64dp"
+                    android:layout_height="52dp"
+                    android:backgroundTint="@color/lume_rosa"
+                    app:icon="@drawable/play"
+                    app:iconSize="28dp"
+                    app:iconTint="@color/lume_texto"
+                    app:cornerRadius="16dp" />
+                <EditText
+                    android:id="@+id/edt_silabaUAI"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:background="#FFDBE8FF"
+                    android:hint="Insira o tritongo:"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColor="@color/lume_texto"
+                    android:textColorHint="#99B0D0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+                <Button
+                    android:id="@+id/btn_silabaUEI"
+                    android:layout_width="64dp"
+                    android:layout_height="52dp"
+                    android:backgroundTint="@color/lume_lilas"
+                    app:icon="@drawable/play"
+                    app:iconSize="28dp"
+                    app:iconTint="@color/lume_texto"
+                    app:cornerRadius="16dp" />
+                <EditText
+                    android:id="@+id/edt_silabaUEI"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:background="#FFDBE8FF"
+                    android:hint="Insira o tritongo:"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColor="@color/lume_texto"
+                    android:textColorHint="#99B0D0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+                <Button
+                    android:id="@+id/btn_silabaUAO"
+                    android:layout_width="64dp"
+                    android:layout_height="52dp"
+                    android:backgroundTint="@color/lume_azul"
+                    app:icon="@drawable/play"
+                    app:iconSize="28dp"
+                    app:iconTint="@color/lume_texto"
+                    app:cornerRadius="16dp" />
+                <EditText
+                    android:id="@+id/edt_silabaUAO"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:background="#FFDBE8FF"
+                    android:hint="Insira o tritongo:"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColor="@color/lume_texto"
+                    android:textColorHint="#99B0D0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="24dp">
+                <Button
+                    android:id="@+id/btn_silabaUOE"
+                    android:layout_width="64dp"
+                    android:layout_height="52dp"
+                    android:backgroundTint="@color/lume_verde"
+                    app:icon="@drawable/play"
+                    app:iconSize="28dp"
+                    app:iconTint="@color/lume_texto"
+                    app:cornerRadius="16dp" />
+                <EditText
+                    android:id="@+id/edt_silabaUOE"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:background="#FFDBE8FF"
+                    android:hint="Insira o tritongo:"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColor="@color/lume_texto"
+                    android:textColorHint="#99B0D0" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_proxlicao4_3"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:backgroundTint="@color/lume_verde"
+                android:text="Próximo Exercício"
+                android:textColor="@color/lume_texto"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

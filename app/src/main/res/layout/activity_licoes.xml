@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_degrade">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#FFFFFFFF"
+            android:padding="20dp"
+            android:elevation="8dp">
+
+            <!-- BOTÕES SUPERIORES -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_aboutlicoes"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_margin="16dp"
+                    android:backgroundTint="@color/lume_verde"
+                    android:insetLeft="0dp"
+                    android:insetTop="0dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    app:cornerRadius="32dp"
+                    app:icon="@drawable/img_about"
+                    app:iconGravity="textStart"
+                    app:iconSize="32dp"
+                    app:iconTint="@color/lume_lilas"/>
+
+                <Button
+                    android:id="@+id/btn_stoplicoes"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="12dp"
+                    android:backgroundTint="@color/lume_rosa"
+                    android:insetLeft="0dp"
+                    android:insetTop="0dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    app:cornerRadius="32dp"
+                    app:icon="@drawable/img_stop"
+                    app:iconGravity="textStart"
+                    app:iconSize="32dp"
+                    app:iconTint="@color/lume_lilas"/>
+            </LinearLayout>
+
+            <!-- DESCRIÇÃO -->
+            <TextView
+                android:id="@+id/txt_mensagem9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Essa é a Lição 3: Palavras do Dia a Dia!"
+                android:textAlignment="center"
+                android:textColor="@color/lume_texto"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txt_mensagem10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Lições concluídas: 0 / 3"
+                android:textAlignment="center"
+                android:textColor="#4A90E2"
+                android:textSize="18sp"/>
+
+            <!-- EXERCÍCIOS -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- Linha 1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="18dp">
+                    <Button
+                        android:id="@+id/btn_U1L1"
+                        android:layout_width="85dp"
+                        android:layout_height="80dp"
+                        android:layout_marginEnd="45dp"
+                        android:backgroundTint="@color/lume_verde"
+                        android:text="1"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        app:cornerRadius="30dp"
+                        app:icon="@drawable/img_star"
+                        app:iconSize="28dp"
+                        app:iconTint="#000000"/>
+                    <Button
+                        android:id="@+id/btn_U1L2"
+                        android:layout_width="85dp"
+                        android:layout_height="80dp"
+                        android:layout_marginEnd="45dp"
+                        android:backgroundTint="@color/lume_amarelo"
+                        android:text="1"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        app:cornerRadius="30dp"
+                        app:icon="@drawable/img_star"
+                        app:iconSize="28dp"
+                        app:iconTint="#000000"/>
+                </LinearLayout>
+
+                <!-- Linha 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginBottom="18dp">
+                    <Button
+                        android:id="@+id/btn_U1L4"
+                        android:layout_width="85dp"
+                        android:layout_height="80dp"
+                        android:layout_marginEnd="45dp"
+                        android:backgroundTint="@color/lume_azul"
+                        android:text="1"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        app:cornerRadius="30dp"
+                        app:icon="@drawable/img_star"
+                        app:iconSize="28dp"
+                        app:iconTint="#000000"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_proximaUnidade1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/lume_azul"
+                android:text="Voltar para a Tela Inicial"
+                android:textColor="@color/lume_texto"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

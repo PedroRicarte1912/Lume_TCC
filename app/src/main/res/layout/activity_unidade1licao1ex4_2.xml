@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayout9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_degrade">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFFFF"
+            android:padding="24dp"
+            android:elevation="8dp">
+
+            <TextView
+                android:id="@+id/txt_explicacao7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Etapa 2 do exercício 1:"
+                android:textAlignment="center"
+                android:textColor="@color/lume_texto"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/txt_explicacao8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Escute os áudios e escreva as sílabas:"
+                android:textAlignment="center"
+                android:textColor="@color/lume_texto"
+                android:textSize="18sp"
+                android:layout_marginBottom="24dp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1"
+                android:layout_marginBottom="24dp">
+
+                <TableRow android:layout_marginBottom="16dp">
+                    <Button
+                        android:id="@+id/btn_silabaAI"
+                        android:layout_width="64dp"
+                        android:layout_height="52dp"
+                        android:backgroundTint="@color/lume_rosa"
+                        app:icon="@drawable/play"
+                        app:iconSize="28dp"
+                        app:iconTint="@color/lume_texto"
+                        app:cornerRadius="16dp" />
+                    <EditText
+                        android:id="@+id/edt_silabaAI"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="12dp"
+                        android:background="#FFDBE8FF"
+                        android:hint="Insira a sílaba:"
+                        android:inputType="text"
+                        android:padding="12dp"
+                        android:textColor="@color/lume_texto"
+                        android:textColorHint="#99B0D0" />
+                </TableRow>
+
+                <TableRow android:layout_marginBottom="16dp">
+                    <Button
+                        android:id="@+id/btn_silabaEI"
+                        android:layout_width="64dp"
+                        android:layout_height="52dp"
+                        android:backgroundTint="@color/lume_lilas"
+                        app:icon="@drawable/play"
+                        app:iconSize="28dp"
+                        app:iconTint="@color/lume_texto"
+                        app:cornerRadius="16dp" />
+                    <EditText
+                        android:id="@+id/edt_silabaEI"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="12dp"
+                        android:background="#FFDBE8FF"
+                        android:hint="Insira a sílaba:"
+                        android:inputType="text"
+                        android:padding="12dp"
+                        android:textColor="@color/lume_texto"
+                        android:textColorHint="#99B0D0" />
+                </TableRow>
+
+                <TableRow android:layout_marginBottom="16dp">
+                    <Button
+                        android:id="@+id/btn_silabaOI"
+                        android:layout_width="64dp"
+                        android:layout_height="52dp"
+                        android:backgroundTint="@color/lume_azul"
+                        app:icon="@drawable/play"
+                        app:iconSize="28dp"
+                        app:iconTint="@color/lume_texto"
+                        app:cornerRadius="16dp" />
+                    <EditText
+                        android:id="@+id/edt_silabaOI"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="12dp"
+                        android:background="#FFDBE8FF"
+                        android:hint="Insira a sílaba:"
+                        android:inputType="text"
+                        android:padding="12dp"
+                        android:textColor="@color/lume_texto"
+                        android:textColorHint="#99B0D0" />
+                </TableRow>
+
+                <TableRow android:layout_marginBottom="16dp">
+                    <Button
+                        android:id="@+id/btn_silabaAU"
+                        android:layout_width="64dp"
+                        android:layout_height="52dp"
+                        android:backgroundTint="@color/lume_verde"
+                        app:icon="@drawable/play"
+                        app:iconSize="28dp"
+                        app:iconTint="@color/lume_texto"
+                        app:cornerRadius="16dp" />
+                    <EditText
+                        android:id="@+id/edt_silabaAU"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="12dp"
+                        android:background="#FFDBE8FF"
+                        android:hint="Insira a sílaba:"
+                        android:inputType="text"
+                        android:padding="12dp"
+                        android:textColor="@color/lume_texto"
+                        android:textColorHint="#99B0D0" />
+                </TableRow>
+
+                <TableRow android:layout_marginBottom="16dp">
+                    <Button
+                        android:id="@+id/btn_silabaEU"
+                        android:layout_width="64dp"
+                        android:layout_height="52dp"
+                        android:backgroundTint="@color/lume_amarelo"
+                        app:icon="@drawable/play"
+                        app:iconSize="28dp"
+                        app:iconTint="@color/lume_texto"
+                        app:cornerRadius="16dp" />
+                    <EditText
+                        android:id="@+id/edt_silabaEU"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="12dp"
+                        android:background="#FFDBE8FF"
+                        android:hint="Insira a sílaba:"
+                        android:inputType="text"
+                        android:padding="12dp"
+                        android:textColor="@color/lume_texto"
+                        android:textColorHint="#99B0D0" />
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/btn_silabaOU"
+                        android:layout_width="64dp"
+                        android:layout_height="52dp"
+                        android:backgroundTint="@color/lume_rosa"
+                        app:icon="@drawable/play"
+                        app:iconSize="28dp"
+                        app:iconTint="@color/lume_texto"
+                        app:cornerRadius="16dp" />
+                    <EditText
+                        android:id="@+id/edt_silabaOU"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="12dp"
+                        android:background="#FFDBE8FF"
+                        android:hint="Insira a sílaba:"
+                        android:inputType="text"
+                        android:padding="12dp"
+                        android:textColor="@color/lume_texto"
+                        android:textColorHint="#99B0D0" />
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+                android:id="@+id/btn_proxlicao4_2"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:backgroundTint="@color/lume_verde"
+                android:text="Próximo Exercício"
+                android:textColor="@color/lume_texto"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

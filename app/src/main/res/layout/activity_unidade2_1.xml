@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/txt_explicacao21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clique para ouvir os sons das acentuações!"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#4A90E2"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Voltar para o Menu Principal"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:backgroundTint="#A8E6A3"
+        android:layout_marginBottom="12dp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnAgudo1"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="Á\nÁgua"
+                android:textStyle="bold"
+                android:textColor="#5D54AA"
+                android:backgroundTint="#FFB1C7"/>
+
+            <Button
+                android:id="@+id/btnAgudo2"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="É\nRemédio"
+                android:textStyle="bold"
+                android:textColor="#5D54AA"
+                android:backgroundTint="#FFB1C7"/>
+
+            <Button
+                android:id="@+id/btnAgudo3"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="Ó\nAvó"
+                android:textStyle="bold"
+                android:textColor="#5D54AA"
+                android:backgroundTint="#FFB1C7"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnCirc1"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="Ê\nVocê"
+                android:textStyle="bold"
+                android:textColor="#5D54AA"
+                android:backgroundTint="#CAB8F7"/>
+
+            <Button
+                android:id="@+id/btnCirc2"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="Ô\nAvô"
+                android:textStyle="bold"
+                android:textColor="#5D54AA"
+                android:backgroundTint="#CAB8F7"/>
+
+            <Button
+                android:id="@+id/btnCirc3"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="Â\nÂnimo"
+                android:textStyle="bold"
+                android:textColor="#5D54AA"
+                android:backgroundTint="#CAB8F7"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnTil1"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="Ã\nIrmã"
+                android:textStyle="bold"
+                android:textColor="#5D54AA"
+                android:backgroundTint="#AED6F0"/>
+
+            <Button
+                android:id="@+id/btnTil2"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="Õ\nLimões"
+                android:textStyle="bold"
+                android:textColor="#5D54AA"
+                android:backgroundTint="#AED6F0"/>
+
+            <Button
+                android:id="@+id/btnCedilha"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="Ç\nPreço"
+                android:textStyle="bold"
+                android:textColor="#5D54AA"
+                android:backgroundTint="#AED6F0"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnEx1"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="Ú\nSaúde"
+                android:textStyle="bold"
+                android:textColor="#5D54AA"
+                android:backgroundTint="#B5EAD6"/>
+
+            <Button
+                android:id="@+id/btnEx2"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="Í\nPaís"
+                android:textStyle="bold"
+                android:textColor="#5D54AA"
+                android:backgroundTint="#B5EAD6"/>
+
+            <Button
+                android:id="@+id/btnEx3"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="Ó\nHistória"
+                android:textStyle="bold"
+                android:textColor="#5D54AA"
+                android:backgroundTint="#B5EAD6"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnproxUnidade3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Ir para unidade 3"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:backgroundTint="#A8E6A3"
+        android:layout_marginTop="12dp"/>
+
+</LinearLayout>
