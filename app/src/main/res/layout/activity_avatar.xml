@@ -114,7 +114,7 @@
             android:layout_marginTop="32dp"
             android:backgroundTint="#A8E6A3"
             android:text="Esse sou eu"
-            android:textColor="#000000"
+            android:textColor="@color/lume_texto"
             android:textSize="16sp"
             android:textStyle="bold" />
 
