@@ -47,15 +47,18 @@
     <!-- CABEÇALHO: TÍTULO/SUBTÍTULO + GIF AO LADO, FORA DO CARD -->
 
     <!-- GIF DO PERSONAGEM, SOLTO NA TELA, SEM CÍRCULO -->
+
     <ImageView
         android:id="@+id/img_personagem_gif"
         android:layout_width="130dp"
         android:layout_height="130dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="12dp"
         android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_about_parabens"/>
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.119" />
 
     <TextView
         android:id="@+id/txt_parabens_titulo"
@@ -100,31 +103,32 @@
 
     <!-- CONTEÚDO PRINCIPAL -->
     <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        app:layout_constraintTop_toBottomOf="@id/barrier_header"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/barrier_header">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:background="@drawable/bg_card_rounded"
-            android:padding="24dp"
-            android:elevation="8dp">
+            android:elevation="8dp"
+            android:orientation="vertical"
+            android:padding="24dp">
 
             <!-- BARRA DE PROGRESSO -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginBottom="6dp">
+                android:layout_marginBottom="6dp"
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="0dp"
@@ -132,7 +136,7 @@
                     android:layout_weight="1"
                     android:text="Progresso total"
                     android:textColor="@color/lume_texto"
-                    android:textSize="13sp"/>
+                    android:textSize="13sp" />
 
                 <TextView
                     android:id="@+id/txt_porcentagem"
@@ -141,7 +145,7 @@
                     android:text="20%"
                     android:textColor="@color/lume_verde"
                     android:textSize="13sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -150,78 +154,78 @@
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
+                android:layout_marginBottom="20dp"
                 android:max="100"
                 android:progress="20"
-                android:progressDrawable="@drawable/bg_progress_verde"
-                android:layout_marginBottom="20dp"/>
+                android:progressDrawable="@drawable/bg_progress_verde" />
 
             <!-- INDICADORES DE UNIDADE (5 círculos) -->
             <LinearLayout
                 android:id="@+id/ll_unidades"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_gravity="center"
-                android:layout_marginBottom="20dp">
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/dot_unidade1"
                     android:layout_width="36dp"
                     android:layout_height="36dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_dot_verde"
                     android:gravity="center"
                     android:text="✓"
                     android:textColor="#FFFFFF"
                     android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:background="@drawable/bg_dot_verde"
-                    android:layout_marginEnd="8dp"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/dot_unidade2"
                     android:layout_width="36dp"
                     android:layout_height="36dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_dot_cinza"
                     android:gravity="center"
                     android:text="2"
                     android:textColor="@color/lume_texto"
                     android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:background="@drawable/bg_dot_cinza"
-                    android:layout_marginEnd="8dp"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/dot_unidade3"
                     android:layout_width="36dp"
                     android:layout_height="36dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_dot_cinza"
                     android:gravity="center"
                     android:text="3"
                     android:textColor="@color/lume_texto"
                     android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:background="@drawable/bg_dot_cinza"
-                    android:layout_marginEnd="8dp"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/dot_unidade4"
                     android:layout_width="36dp"
                     android:layout_height="36dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_dot_cinza"
                     android:gravity="center"
                     android:text="4"
                     android:textColor="@color/lume_texto"
                     android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:background="@drawable/bg_dot_cinza"
-                    android:layout_marginEnd="8dp"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/dot_unidade5"
                     android:layout_width="36dp"
                     android:layout_height="36dp"
+                    android:background="@drawable/bg_dot_cinza"
                     android:gravity="center"
                     android:text="5"
                     android:textColor="@color/lume_texto"
                     android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:background="@drawable/bg_dot_cinza"/>
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -229,20 +233,20 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_marginBottom="20dp"
                 android:background="@drawable/bg_motivacional"
-                android:padding="14dp"
-                android:layout_marginBottom="20dp">
+                android:orientation="vertical"
+                android:padding="14dp">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
                     android:gravity="center"
                     android:text="Você está indo muito bem! 🌟"
                     android:textColor="@color/lume_lilas"
                     android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:layout_marginBottom="4dp"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/txt_motivacional"
@@ -251,7 +255,7 @@
                     android:gravity="center"
                     android:text="Continue assim para dominar todos os sons do português!"
                     android:textColor="@color/lume_texto"
-                    android:textSize="13sp"/>
+                    android:textSize="13sp" />
 
             </LinearLayout>
 
@@ -260,30 +264,30 @@
                 android:id="@+id/btn_proxima_unidade"
                 android:layout_width="match_parent"
                 android:layout_height="54dp"
+                android:layout_marginBottom="10dp"
                 android:backgroundTint="@color/lume_verde"
                 android:text="Próxima unidade"
                 android:textColor="@color/lume_texto"
-                android:textStyle="bold"
                 android:textSize="16sp"
-                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
                 app:cornerRadius="18dp"
                 app:iconGravity="textStart"
                 app:iconSize="20dp"
-                app:iconTint="@color/lume_texto"/>
+                app:iconTint="@color/lume_texto" />
 
             <!-- BOTÃO REFAZER -->
             <Button
                 android:id="@+id/btn_refazer_unidade"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 android:layout_width="match_parent"
                 android:layout_height="44dp"
                 android:backgroundTint="@android:color/transparent"
                 android:text="Refazer esta unidade"
                 android:textColor="@color/lume_texto"
-                app:strokeColor="#DDDDDD"
                 android:textSize="14sp"
                 app:cornerRadius="14dp"
-                app:strokeWidth="1.5dp"
-                style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+                app:strokeColor="#DDDDDD"
+                app:strokeWidth="1.5dp" />
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

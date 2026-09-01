@@ -22,13 +22,13 @@ class ActivityMenuUnidades : AppCompatActivity() {
         // que podem ser liberadas, independente do progresso.
         //   Nivel 1 -> libera todas (Unidade 5)
         //   Nivel 2 -> libera ate a Unidade 4
-        //   Nivel 3 -> libera ate a Unidade 2
+        //   Nivel 3 -> libera ate a Unidade 3
         // -------------------------------------------------------------
         // Define a quantidade máxima de unidades liberadas diretamente pelo nível de TEA
         private fun maxUnidadeParaNivel(nivelTea: Int): Int = when (nivelTea) {
             1 -> TOTAL_UNIDADES // Libera até a 5
             2 -> 4              // Libera até a 4
-            3 -> 2              // Libera até a 2
+            3 -> 3              // Libera até a 3
             else -> 1           // Padrão de segurança
         }
     }
@@ -231,7 +231,7 @@ class ActivityMenuUnidades : AppCompatActivity() {
         val destino: Class<*>? = when (numero) {
             1 -> ActivityU1L1EX1::class.java
             2 -> ActivityU2EX1::class.java
-            3 -> ActivityLicoes3::class.java
+            3 -> ActivityU3L3EX1::class.java
             4 -> ActivityLicoes4::class.java
             5 -> ActivityLicoes5::class.java
             else -> null

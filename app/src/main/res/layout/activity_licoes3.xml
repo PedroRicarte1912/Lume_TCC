@@ -189,17 +189,18 @@
                     app:iconTint="#000000"/>
             </LinearLayout>
         </LinearLayout>
-        <Button
-            android:id="@+id/btn_proximaUnidade3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="@color/lume_azul"
-            android:text="Voltar para a Tela Inicial"
-            android:textColor="@color/lume_texto"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:cornerRadius="20dp"/>
+
+            <Button
+                android:id="@+id/btn_proximaUnidade3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/lume_azul"
+                android:text="Ir para a Próxima Unidade"
+                android:textColor="@color/lume_texto"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -49,7 +49,12 @@ class ActivityLicoes4 : AppCompatActivity() {
         }
 
         btn_proximaUnidade4.setOnClickListener {
-            // próxima unidade — preencha quando criar a Unidade 5
+
+            val intent = Intent(this, ActivityParabens::class.java).apply {
+                putExtra(ActivityParabens.EXTRA_UNIDADE_CONCLUIDA, 4)
+            }
+            startActivity(intent)
+            finish()
         }
 
         btn_U4L4E1.setOnClickListener {

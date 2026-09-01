@@ -39,11 +39,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
                 android:gravity="center"
                 android:text="Digite as letras que faltam em cada palavra."
-                android:textColor="#666666"
-                android:textSize="14sp"
-                android:layout_marginBottom="20dp"/>
+                android:textColor="@color/lume_texto"
+                android:textSize="14sp" />
 
             <!-- LUA: _UA -->
             <LinearLayout

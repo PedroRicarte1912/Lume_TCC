@@ -10,6 +10,7 @@ import com.univap.lume.MainActivity
 import com.univap.lume.R
 import java.util.Locale
 
+
 class ActivityU2EX1 : AppCompatActivity(), TextToSpeech.OnInitListener {
 
     private lateinit var tts: TextToSpeech

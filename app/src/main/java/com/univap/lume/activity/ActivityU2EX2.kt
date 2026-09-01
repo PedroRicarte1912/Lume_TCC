@@ -10,6 +10,7 @@ import com.univap.lume.MainActivity
 import com.univap.lume.R
 import java.util.Locale
 
+
 class ActivityU2EX2 : AppCompatActivity(), TextToSpeech.OnInitListener {
 
     private lateinit var tts: TextToSpeech
@@ -98,7 +99,10 @@ class ActivityU2EX2 : AppCompatActivity(), TextToSpeech.OnInitListener {
                 .putInt("U2EXAcentuacao_concluido", 1)
                 .apply()
 
-            startActivity(Intent(this, ActivityU3L3EX1::class.java))
+            val intent = Intent(this, ActivityParabens::class.java).apply {
+                putExtra(ActivityParabens.EXTRA_UNIDADE_CONCLUIDA, 2)
+            }
+            startActivity(intent)
             finish()
         }
     }

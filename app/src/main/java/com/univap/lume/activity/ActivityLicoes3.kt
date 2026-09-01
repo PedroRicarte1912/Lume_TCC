@@ -27,8 +27,8 @@ class ActivityLicoes3 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_licoes3)
 
-        btn_aboutlicoes     = findViewById(R.id.btn_aboutlicoes)
-        btn_stoplicoes      = findViewById(R.id.btn_stoplicoes)
+        btn_aboutlicoes     = findViewById(R.id.btn_aboutlicoes5)
+        btn_stoplicoes      = findViewById(R.id.btn_stoplicoes5)
 
         btn_U3L3E1          = findViewById(R.id.btn_U3L3E1)
         btn_U3L3E2          = findViewById(R.id.btn_U3L3E2)
@@ -50,7 +50,7 @@ class ActivityLicoes3 : AppCompatActivity() {
         }
 
         btn_proximaUnidade3.setOnClickListener {
-            // vazio por enquanto
+            startActivity(Intent(this, ActivityLicoes4::class.java))
         }
 
         btn_U3L3E1.setOnClickListener {

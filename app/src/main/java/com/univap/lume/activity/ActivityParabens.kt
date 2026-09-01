@@ -15,7 +15,7 @@ class ActivityParabens : AppCompatActivity() {
         const val TOTAL_UNIDADES = 5
 
         // AvatarActivity salva: "avatar12", "avatar22", ..., "avatar62"
-        // Agora usamos direto a imagem estática do avatar (sem gif)
+        // Agora usamos direto a imagem estática do avatar
         private val avatarMap = mapOf(
             "avatar12" to R.drawable.avatar12,
             "avatar22" to R.drawable.avatar22,
