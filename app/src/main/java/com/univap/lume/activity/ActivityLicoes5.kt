@@ -55,7 +55,6 @@ class ActivityLicoes5 : AppCompatActivity() {
         }
 
         btn_proximaUnidade5.setOnClickListener {
-            // Quando existir a Unidade 6, altere aqui.
             finish()
         }
 

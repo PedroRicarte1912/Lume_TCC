@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.univap.lume.MainActivity
 import com.univap.lume.R
 import java.util.Locale
 
@@ -70,7 +71,7 @@ class ActivityU3L3EX5 : AppCompatActivity(), TextToSpeech.OnInitListener {
 
         btn_stoplicoes.setOnClickListener {
             startActivity(
-                Intent(this, ActivityStopLicoesAbout::class.java)
+                Intent(this, MainActivity::class.java)
                     .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
             )
         }

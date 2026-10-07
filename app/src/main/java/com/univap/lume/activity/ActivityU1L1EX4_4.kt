@@ -8,6 +8,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.univap.lume.MainActivity
 import com.univap.lume.R
 import java.util.Locale
 
@@ -79,7 +80,7 @@ class ActivityU1L1EX4_4 : AppCompatActivity(), TextToSpeech.OnInitListener {
 
         // Para a lição: vai para a tela de confirmação e depois para MainActivity
         btn_stoplicoes.setOnClickListener {
-            val intent = Intent(this, ActivityStopLicoesAbout::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
             startActivity(intent)
         }
