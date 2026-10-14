@@ -169,9 +169,9 @@ class ActivityParabens : AppCompatActivity() {
 
         val destino: Class<*>? = when (proximaUnidade) {
             2 -> ActivityU2EX1::class.java
-            3 -> ActivityLicoes3::class.java
-            4 -> ActivityLicoes4::class.java
-            5 -> ActivityLicoes5::class.java
+            3 -> ActivityU3L3EX1::class.java
+            4 -> ActivityU4L4EX1::class.java
+            5 -> ActivityU5L5EX1::class.java
             else -> null
         }
 
@@ -194,8 +194,8 @@ class ActivityParabens : AppCompatActivity() {
             1 -> ActivityU1L1EX1::class.java
             2 -> ActivityU2EX1::class.java
             3 -> ActivityU3L3EX1::class.java
-            4 -> ActivityLicoes4::class.java
-            5 -> ActivityLicoes5::class.java
+            4 -> ActivityU4L4EX1::class.java
+            5 -> ActivityU5L5EX1::class.java
             else -> null
         }
 

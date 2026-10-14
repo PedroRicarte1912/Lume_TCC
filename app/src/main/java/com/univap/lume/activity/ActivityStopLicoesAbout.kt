@@ -24,7 +24,7 @@ class ActivityStopLicoesAbout: AppCompatActivity() {
         btn_voltarLicoes=findViewById(R.id.btn_voltarLicoes)
 
         btn_voltarLicoes.setOnClickListener {
-            val tela_licoes= Intent(this, ActivityLicoes1::class.java)
+            val tela_licoes= Intent(this, ActivityMenuUnidades::class.java)
             startActivity(tela_licoes)
         }
 
