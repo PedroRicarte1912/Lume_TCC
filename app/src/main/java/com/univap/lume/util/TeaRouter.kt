@@ -5,9 +5,6 @@ import android.content.Intent
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
-import com.univap.lume.activity.ActivityLicoes1
-import com.univap.lume.activity.ActivityLicoes3
-import com.univap.lume.activity.ActivityLicoes5
 import com.univap.lume.activity.ActivityMapearTea
 
 object TeaRouter {
