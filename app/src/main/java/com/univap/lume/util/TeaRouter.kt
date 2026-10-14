@@ -6,6 +6,9 @@ import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import com.univap.lume.activity.ActivityMapearTea
+import com.univap.lume.activity.ActivityU1L1EX1
+import com.univap.lume.activity.ActivityU3L3EX1
+import com.univap.lume.activity.ActivityU5L5EX1
 
 object TeaRouter {
 
@@ -34,9 +37,9 @@ object TeaRouter {
         val nivelInt = nivel?.trim()?.toDoubleOrNull()?.toInt()
 
         return when (nivelInt) {
-            3 -> ActivityLicoes1::class.java
-            2 -> ActivityLicoes3::class.java
-            1 -> ActivityLicoes5::class.java
+            3 -> ActivityU1L1EX1::class.java
+            2 -> ActivityU3L3EX1::class.java
+            1 -> ActivityU5L5EX1::class.java
             else -> {
                 Toast.makeText(activity, "Nível de TEA não definido. Defina seu nível de TEA.", Toast.LENGTH_LONG).show()
                 ActivityMapearTea::class.java
