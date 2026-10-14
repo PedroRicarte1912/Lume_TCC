@@ -94,10 +94,8 @@ class ActivityU2EX2 : AppCompatActivity(), TextToSpeech.OnInitListener {
         }
 
         btnProxima.setOnClickListener {
-            val prefs = getSharedPreferences("Progresso", MODE_PRIVATE)
-            prefs.edit()
-                .putInt("U2EXAcentuacao_concluido", 1)
-                .apply()
+            ProgressoRepository.salvarUnidadeConcluida(this, 2)  // 2 = número da unidade
+            finish()
 
             val intent = Intent(this, ActivityParabens::class.java).apply {
                 putExtra(ActivityParabens.EXTRA_UNIDADE_CONCLUIDA, 2)

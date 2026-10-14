@@ -69,7 +69,10 @@ class ActivityU1L1EX4_4 : AppCompatActivity(), TextToSpeech.OnInitListener {
         btn_hiatoUA.setOnClickListener { falar("UA") }
         btn_hiatoIE.setOnClickListener { falar("IE") }
 
-        btn_proxunidade1.setOnClickListener { Exercicio4_4() }
+        btn_proxunidade1.setOnClickListener { Exercicio4_4()
+            ProgressoRepository.salvarUnidadeConcluida(this, 1)  // 1 = número da unidade
+            finish()
+        }
 
         // Abre a tela de about e volta para este exercício automaticamente
         btn_aboutlicoes.setOnClickListener {

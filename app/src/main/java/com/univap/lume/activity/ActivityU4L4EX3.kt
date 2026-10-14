@@ -72,7 +72,10 @@ class ActivityU4L4EX3 : AppCompatActivity(), TextToSpeech.OnInitListener {
         btnAniversariante.setOnClickListener   { falar("Aniversariante") }
         btnEstacionamento.setOnClickListener   { falar("Estacionamento") }
 
-        btnVerificar5.setOnClickListener { verificarExercicio() }
+        btnVerificar5.setOnClickListener { verificarExercicio()
+            ProgressoRepository.salvarUnidadeConcluida(this, 4)  // 4 = número da unidade
+            finish()
+        }
 
         btn_aboutlicoes.setOnClickListener {
             startActivity(Intent(this, ActivityAboutLicoes::class.java))

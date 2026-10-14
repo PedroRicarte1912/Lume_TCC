@@ -52,6 +52,8 @@ class ActivityU5L5EX10_3 : AppCompatActivity() {
 
         btnProximoU5L5EX10_3.setOnClickListener {
             verificarExercicio()
+            ProgressoRepository.salvarUnidadeConcluida(this, 5)  // 5 = número da unidade
+            finish()
         }
     }
 

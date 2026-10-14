@@ -69,11 +69,19 @@ class ActivityMenuUnidades : AppCompatActivity() {
         prefs.edit().putInt(NIVEL_TEA_KEY, nivelTea).apply()
 
         // 4. Carrega o progresso atual do usuário
-        unidadeConcluida = prefs.getInt(PROGRESSO_KEY, 0).coerceIn(0, TOTAL_UNIDADES)
+        unidadeConcluida = ProgressoRepository.lerLocal(this).coerceIn(0, TOTAL_UNIDADES)
 
         vincularViews()
         setupUI()
         setupListeners()
+    }
+    override fun onResume() {
+        super.onResume()
+        ProgressoRepository.carregar(this) { valor ->
+            if (isFinishing || isDestroyed) return@carregar
+            unidadeConcluida = valor.coerceIn(0, TOTAL_UNIDADES)
+            setupUI()   // reaplica status das unidades + barra
+        }
     }
 
     // -------------------------------------------------------------------------
@@ -131,7 +139,7 @@ class ActivityMenuUnidades : AppCompatActivity() {
         }
 
         val progresso = (unidadeConcluida * 100) / TOTAL_UNIDADES
-        progressGeral.progress = progresso
+        progressGeral.setProgress(progresso, true)
         txtProgressoGeralPorcentagem.text = "$progresso%"
     }
 

@@ -63,7 +63,10 @@ class ActivityU3L3EX5 : AppCompatActivity(), TextToSpeech.OnInitListener {
         btnPreco.setOnClickListener   { falar("Preço") }
         btnBanco.setOnClickListener   { falar("Banco") }
 
-        btnVerificar555.setOnClickListener { verificarExercicio() }
+        btnVerificar555.setOnClickListener { verificarExercicio()
+            ProgressoRepository.salvarUnidadeConcluida(this, 3)  // 3 = número da unidade
+            finish()
+        }
 
         btn_aboutlicoes.setOnClickListener {
             startActivity(Intent(this, ActivityAboutLicoes::class.java))
