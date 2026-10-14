@@ -8,6 +8,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.univap.lume.MainActivity
 import com.univap.lume.R
 import java.text.Normalizer
 import java.util.Locale
@@ -25,12 +26,16 @@ class ActivityU3L3EX2_2 : AppCompatActivity(), TextToSpeech.OnInitListener {
     private lateinit var btnSol: Button
     private lateinit var btnVerificar322: Button
 
+    private lateinit var btn_stoplicoes: Button
+    private lateinit var btn_aboutlicoes: Button
+
     private lateinit var edtPai: EditText
     private lateinit var edtMae: EditText
     private lateinit var edtPao: EditText
     private lateinit var edtDia: EditText
     private lateinit var edtRua: EditText
     private lateinit var edtSol: EditText
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,6 +52,8 @@ class ActivityU3L3EX2_2 : AppCompatActivity(), TextToSpeech.OnInitListener {
         btnDia = findViewById(R.id.btnDia)
         btnRua = findViewById(R.id.btnRua)
         btnSol = findViewById(R.id.btnSol)
+        btn_stoplicoes=findViewById(R.id.btn_stoplicoes)
+        btn_aboutlicoes=findViewById(R.id.btn_aboutlicoes)
 
         btnVerificar322 = findViewById(R.id.btnVerificar322)
 
@@ -66,6 +73,15 @@ class ActivityU3L3EX2_2 : AppCompatActivity(), TextToSpeech.OnInitListener {
 
         btnVerificar322.setOnClickListener {
             verificarExercicio3_2_2()
+        }
+        btn_aboutlicoes.setOnClickListener {
+            startActivity(Intent(this, ActivityAboutLicoes::class.java))
+        }
+        btn_stoplicoes.setOnClickListener {
+            startActivity(
+                Intent(this, MainActivity::class.java)
+                    .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+            )
         }
     }
 

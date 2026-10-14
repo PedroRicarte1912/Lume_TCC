@@ -60,7 +60,7 @@ class ActivityU1L1EX4 : AppCompatActivity(), TextToSpeech.OnInitListener {
         // Para a lição e limpa o stack até chegar na MainActivity
         btn_stoplicoes.setOnClickListener {
             startActivity(
-                Intent(this, ActivityStopLicoesAbout::class.java)
+                Intent(this, MainActivity::class.java)
                     .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
             )
         }
