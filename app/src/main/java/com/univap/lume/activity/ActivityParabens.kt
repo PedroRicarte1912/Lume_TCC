@@ -1,6 +1,7 @@
 package com.univap.lume.activity
 
 import android.content.Intent
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -56,6 +57,7 @@ class ActivityParabens : AppCompatActivity() {
 
     private var unidadeConcluida = 1
     private var nomeAvatar = "avatar12"
+    private var mediaPlayer: MediaPlayer? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -65,11 +67,26 @@ class ActivityParabens : AppCompatActivity() {
         unidadeConcluida = intent.getIntExtra(EXTRA_UNIDADE_CONCLUIDA, 1)
             .coerceIn(1, TOTAL_UNIDADES)
 
+        // Cache local: mostra o avatar na hora, antes de o Firebase responder
         nomeAvatar = getSharedPreferences("LumeSettings", MODE_PRIVATE)
             .getString("AVATAR_KEY", "avatar12") ?: "avatar12"
 
+        // Salva o progresso (nunca diminui; refazer uma unidade antiga não altera nada)
+        ProgressoRepository.salvarUnidadeConcluida(this, unidadeConcluida)
+
         setupUI()
         setupListeners()
+
+        // Corrige com o que está no Firebase e toca o som escolhido
+        PreferenciasRepositorio.carregar(this) { avatar, som ->
+            if (isFinishing || isDestroyed) return@carregar
+
+            if (avatar != null && avatar != nomeAvatar) {
+                nomeAvatar = avatar
+                carregarAvatarPersonagem()
+            }
+            if (som != null) tocarSom(som)
+        }
     }
 
     // -------------------------------------------------------------------------
@@ -132,6 +149,44 @@ class ActivityParabens : AppCompatActivity() {
                 }
             }
         }
+    }
+
+    // -------------------------------------------------------------------------
+    // Som
+    // -------------------------------------------------------------------------
+
+    private fun tocarSom(nome: String) {
+        val resId = when (nome) {
+            "som1" -> R.raw.som1
+            "som2" -> R.raw.som2
+            "som3" -> R.raw.som3
+            else -> return
+        }
+
+        pararSom()
+        mediaPlayer = MediaPlayer.create(this, resId)?.apply {
+            setOnCompletionListener {
+                it.release()
+                mediaPlayer = null
+            }
+            start()
+        }
+    }
+
+    private fun pararSom() {
+        mediaPlayer?.release()
+        mediaPlayer = null
+    }
+
+    override fun onStop() {
+        super.onStop()
+        // Se o usuário sair da tela (ex.: abrir "Sobre"), o som para
+        pararSom()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        pararSom()
     }
 
     // -------------------------------------------------------------------------

@@ -77,9 +77,10 @@ class ActivityMenuUnidades : AppCompatActivity() {
     }
     override fun onResume() {
         super.onResume()
-        ProgressoRepository.carregar(this) { valor ->
+        ProgressoRepository.carregar(this) { estado ->
             if (isFinishing || isDestroyed) return@carregar
-            unidadeConcluida = valor.coerceIn(0, TOTAL_UNIDADES)
+            nivelTea = estado.nivelTea.coerceIn(1, 3)
+            unidadeConcluida = estado.unidadeConcluida.coerceIn(0, TOTAL_UNIDADES)
             setupUI()   // reaplica status das unidades + barra
         }
     }

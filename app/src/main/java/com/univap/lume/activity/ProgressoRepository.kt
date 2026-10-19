@@ -8,48 +8,76 @@ object ProgressoRepository {
 
     private const val PREFS_NAME = "LumeSettings"
     private const val PROGRESSO_KEY = "UNIDADE_CONCLUIDA"
+    private const val NIVEL_TEA_KEY = "NIVEL_TEA"   // mesma chave que a ActivityMapearTea usa
+
+    data class Estado(val unidadeConcluida: Int, val nivelTea: Int)
 
     private fun uid() = FirebaseAuth.getInstance().currentUser?.uid
 
     private fun chaveLocal() = "${PROGRESSO_KEY}_${uid() ?: "anon"}"
 
-    private fun referencia() = uid()?.let {
+    private fun refProgresso() = uid()?.let {
         FirebaseDatabase.getInstance().getReference("progresso").child(it).child("unidadeConcluida")
     }
 
+    private fun refNivel() = uid()?.let {
+        FirebaseDatabase.getInstance().getReference("informacoes_tea").child(it).child("nivel_tea")
+    }
+
+    private fun prefs(context: Context) =
+        context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+
     /** Leitura rápida, só do cache local (usar no onCreate). */
-    fun lerLocal(context: Context): Int =
-        context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE).getInt(chaveLocal(), 0)
+    fun lerLocal(context: Context): Int = prefs(context).getInt(chaveLocal(), 0)
 
     /** Chame ao concluir uma unidade. Nunca diminui o progresso já salvo. */
     fun salvarUnidadeConcluida(context: Context, unidade: Int) {
-        val prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
-        if (unidade <= prefs.getInt(chaveLocal(), 0)) return
+        val p = prefs(context)
+        if (unidade <= p.getInt(chaveLocal(), 0)) return
 
-        prefs.edit().putInt(chaveLocal(), unidade).apply()
-        referencia()?.setValue(unidade)
+        p.edit().putInt(chaveLocal(), unidade).apply()
+        refProgresso()?.setValue(unidade)
     }
 
-    /** Busca no Firebase; se falhar (offline), devolve o valor local. */
-    fun carregar(context: Context, onResultado: (Int) -> Unit) {
-        val prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+    /**
+     * Busca progresso e nível de TEA no Firebase.
+     * Se estiver offline ou sem login, devolve os valores locais.
+     */
+    fun carregar(context: Context, onResultado: (Estado) -> Unit) {
+        val p = prefs(context)
         val chave = chaveLocal()
-        val local = prefs.getInt(chave, 0)
-        val ref = referencia()
+        val progressoLocal = p.getInt(chave, 0)
+        val nivelLocal = p.getInt(NIVEL_TEA_KEY, 1).coerceIn(1, 3)
 
-        if (ref == null) {
-            onResultado(local)
+        val refP = refProgresso()
+        val refN = refNivel()
+        val estadoLocal = Estado(progressoLocal, nivelLocal)
+
+        if (refP == null || refN == null) {
+            onResultado(estadoLocal)
             return
         }
 
-        ref.get()
-            .addOnSuccessListener { snap ->
-                val remoto = snap.getValue(Int::class.java) ?: 0
-                val valor = maxOf(local, remoto)
-                prefs.edit().putInt(chave, valor).apply()
-                if (local > remoto) ref.setValue(local)   // sincroniza o que ficou offline
-                onResultado(valor)
+        refP.get()
+            .addOnSuccessListener { snapP ->
+                val remotoP = snapP.getValue(Int::class.java) ?: 0
+                val progresso = maxOf(progressoLocal, remotoP)
+                p.edit().putInt(chave, progresso).apply()
+                if (progressoLocal > remotoP) refP.setValue(progressoLocal)  // sincroniza o que ficou offline
+
+                refN.get()
+                    .addOnSuccessListener { snapN ->
+                        // no Firebase o nível é salvo como texto ("1", "2" ou "3")
+                        val remotoN = snapN.getValue(String::class.java)
+                            ?.toIntOrNull()
+                            ?.takeIf { it in 1..3 }
+
+                        val nivel = remotoN ?: nivelLocal
+                        if (remotoN != null) p.edit().putInt(NIVEL_TEA_KEY, remotoN).apply()
+                        onResultado(Estado(progresso, nivel))
+                    }
+                    .addOnFailureListener { onResultado(Estado(progresso, nivelLocal)) }
             }
-            .addOnFailureListener { onResultado(local) }
+            .addOnFailureListener { onResultado(estadoLocal) }
     }
 }
