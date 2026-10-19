@@ -70,7 +70,7 @@
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:backgroundTint="@color/lume_rosa"
-            android:text="Enviar Email"
+            android:text="Enviar Link de recuperação"
             android:textColor="@color/lume_texto"
             android:textSize="16sp"
             android:textStyle="bold"

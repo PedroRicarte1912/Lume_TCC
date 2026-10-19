@@ -10,11 +10,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity"/>
-        <activity android:name=".activity.ActivityTesteSensorial"/>
         <activity android:name=".activity.AvatarActivity"/>
         <activity android:name=".activity.ActivityMapearTea"/>
         <activity android:name=".activity.ActivityLogin"/>
-        <activity android:name=".activity.ActivityLicoes1"/>
         <activity android:name=".activity.ActivityAboutLicoes"/>
         <activity android:name=".activity.ActivityU1L1EX1"/>
         <activity android:name=".activity.ActivityU1L1EX2"/>
@@ -24,7 +22,6 @@
         <activity android:name=".activity.ActivityU1L1EX4_4"/>
         <activity android:name=".activity.ActivityU2EX1"/>
         <activity android:name=".activity.ActivityU2EX2"/>
-        <activity android:name=".activity.ActivityLicoes3"/>
         <activity android:name=".activity.ActivityU3L3EX1"/>
         <activity android:name=".activity.ActivityU3L3EX1_2"/>
         <activity android:name=".activity.ActivityU3L3EX2"/>
@@ -33,13 +30,11 @@
         <activity android:name=".activity.ActivityU3L3EX4"/>
         <activity android:name=".activity.ActivityU3L3EX4_2"/>
         <activity android:name=".activity.ActivityU3L3EX5"/>
-        <activity android:name=".activity.ActivityLicoes4"/>
         <activity android:name=".activity.ActivityU4L4EX1"/>
         <activity android:name=".activity.ActivityU4L4EX2"/>
         <activity android:name=".activity.ActivityU4L4EX3"/>
         <activity android:name=".activity.ActivityStopLicoesAbout"/>
         <activity android:name=".activity.ActivityParabens"/>
-        <activity android:name=".activity.ActivityLicoes5"/>
         <activity android:name=".activity.ActivityU5L5EX1"/>
         <activity android:name=".activity.ActivityU5L5EX2"/>
         <activity android:name=".activity.ActivityU5L5EX3"/>
@@ -58,10 +53,8 @@
         <activity android:name=".activity.ActivityU5L5EX10"/>
         <activity android:name=".activity.ActivityU5L5EX10_2"/>
         <activity android:name=".activity.ActivityU5L5EX10_3"/>
-        <activity android:name=".activity.ActivityNovaSenha"/>
         <activity android:name=".activity.ActivityTesteSonoro"/>
         <activity android:name=".activity.ActivityRecuperarSenha"/>
-        <activity android:name=".activity.ActivityInserirCodigo"/>
         <activity android:name=".activity.ActivityMenuUnidades"/>
     </application>
 </manifest>
