@@ -1,6 +1,6 @@
 # Lume
 
-**Lume** é um aplicativo móvel educacional desenvolvido como Trabalho de Conclusão de Curso (TCC) do Curso Técnico em Informática do Colégio Univap - Unidade Centro[cite: 2, 6]. O projeto tem como objetivo atuar de forma complementar no processo de alfabetização e na promoção da autonomia social de indivíduos com Transtorno do Espectro Autista (TEA), com foco particular em níveis de suporte leve a moderado[cite: 6].
+**Lume** é um aplicativo móvel educacional desenvolvido como Trabalho de Conclusão de Curso (TCC) do Curso Técnico em Informática do Colégio Univap - Unidade Centro. O projeto tem como objetivo atuar de forma complementar no processo de alfabetização e na promoção da autonomia social de indivíduos com Transtorno do Espectro Autista (TEA), com foco particular em níveis de suporte leve a moderado.
 
 ## Tecnologias Utilizadas
 
@@ -10,7 +10,7 @@
 
 * **Kotlin:** Linguagem de programação nativa, moderna e segura utilizada para o desenvolvimento da lógica e arquitetura do aplicativo.
 * **Android Studio:** Ambiente de desenvolvimento integrado (IDE) oficial para o ecossistema Android, utilizado na construção de interfaces, emulação e depuração.
-* **Firebase Realtime Database:** Banco de dados NoSQL baseado em nuvem para persistência, criptografia natural de credenciais e sincronização de dados em tempo real com suporte a modo offline[cite: 6, 17, 18].
+* **Firebase Realtime Database:** Banco de dados NoSQL baseado em nuvem para persistência, criptografia natural de credenciais e sincronização de dados em tempo real com suporte a modo offline.
 
 ## Principais Funcionalidades e Arquitetura
 
@@ -23,7 +23,7 @@
 * **Recursos Adicionais:** 
   * Sistema de recuperação de senhas integrado ao Firebase.
   * Mecanismos de reforço positivo visual e sonoro com áudios locais calmantes (*brown noise*).
-  * Telas tutoriais e botão de interrupção imediata para manejo de crises e sobrecargas sensoriais[cite: 6, 15, 16, 27].
+  * Telas tutoriais e botão de interrupção imediata para manejo de crises e sobrecargas sensoriais.
 
 ## Como Executar a Aplicação
 
@@ -33,4 +33,4 @@
 4. Sincronize as dependências do projeto com o **Gradle**.
 5. Configure a conexão com o **Firebase Realtime Database** utilizando as credenciais do projeto.
 6. Inicie um emulador Android compatível ou conecte um dispositivo físico via USB com a depuração ativada.
-7. Clique no botão **Run** (ícone de reprodução verde) para compilar e executar o aplicativo[cite: 6, 18].
+7. Clique no botão **Run** (ícone de reprodução verde) para compilar e executar o aplicativo.
